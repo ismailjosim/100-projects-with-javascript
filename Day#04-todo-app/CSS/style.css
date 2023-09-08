@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	background-image: linear-gradient(90deg, #3dffff, #33a3ff);
+}
+li {
+	list-style: none;
+}
+.container {
+	width: 500px;
+	min-height: 400px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+	position: relative;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	color: black;
+	text-align: center;
+}
+
+.todo-title {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+.todo-input-container {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	align-items: center;
+}
+.todo-input {
+	display: inline-block;
+	padding: 1rem 0;
+	padding-left: 1rem;
+	/* border-radius: 0.5rem; */
+	border: 0.2px solid #20c997;
+	outline-color: #20c997;
+	margin-bottom: 2.5rem;
+	font-family: inherit;
+}
+.todo-input:focus,
+.todo-input:active {
+	border-color: #20c997;
+}
+.todo-input-icon {
+	padding: 1rem 0;
+	margin-bottom: 2.5rem;
+	display: inline-block;
+	font-size: 1.4rem;
+	background-color: #20c997;
+	color: #fff;
+	cursor: pointer;
+}
+.todo-input-icon:hover {
+	background-color: #099268;
+}
+
+.todo-list li {
+	background-color: #cecdcd;
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+	text-align: left;
+
+	display: grid;
+	grid-template-columns: 90% 5% 5%;
+}
+.todo-list li span {
+	display: inline-block;
+	padding: 0.5rem;
+}
+.todo-list li span i {
+	color: #fff;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease-in-out;
+}
+#edit-icon {
+	background-color: #f08c00;
+	cursor: pointer;
+}
+#edit-icon:hover {
+	background-color: #e67700;
+}
+
+#delete-icon {
+	background-color: #e03131;
+	cursor: pointer;
+}
+#delete-icon:hover {
+	background-color: #c92a2a;
+}
+.todo-complete {
+	background-color: #2f9e44;
+	color: #fff;
+	text-decoration: line-through;
+}
+.todo-incomplete {
+	background-color: #343a40;
+	color: #fff;
+}

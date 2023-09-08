@@ -4,11 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>#4-todo-application - 100 Javascript Project</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
-
+    <section class="container">
+        <div>
+            <h1 class="todo-title">TODO App</h1>
+            <div class="todo-input-container">
+                <input type="text" value="new dynamic item" class="todo-input" id="add-todo"
+                    placeholder="Add New Todo...">
+                <span id="add-todo-btn" class="todo-input-icon"><i class="fa-solid fa-plus "></i></span>
+            </div>
+            <ul id="all-todos" class="todo-list">
+                <li>
+                    <span class="todo-incomplete">Todo Item 01</span>
+                    <span id="edit-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                    <span id="delete-icon"><i class="fa-solid fa-trash"></i></span>
+                </li>
+                <li>
+                    <span class="todo-incomplete">Todo Item 02</span>
+                    <span id="edit-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                    <span id="delete-icon"><i class="fa-solid fa-trash"></i></span>
+                </li>
+                <li>
+                    <span id="task-text" class="todo-complete">Completed item</span>
+                    <span id="edit-icon"><i class="fa-solid fa-pen-to-square"></i></span>
+                    <span id="delete-icon"><i class="fa-solid fa-trash"></i></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="./JS/app.js"></script>
 </body>
 
 </html>
